@@ -1,5 +1,5 @@
 import type { NextPage, GetServerSideProps } from 'next';
-import { signIn, signOut, useSession, getSession } from 'next-auth/react';
+import { useSession, getSession } from 'next-auth/react';
 import Head from 'next/head';
 
 function SiteHead() {
@@ -18,12 +18,7 @@ export default function Home() {
   return (
     <div>
       <SiteHead />
-
-      {session && <div>User: {session.user?.name}</div>}
-      {!session && (
-        <button onClick={() => signIn()}>Sign In with Github</button>
-      )}
-      {session && <button onClick={() => signOut()}>Sign Out</button>}
+      foobar
     </div>
   );
 }

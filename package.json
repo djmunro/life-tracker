@@ -17,6 +17,9 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@mantine/core": "^4.2.11",
+    "@mantine/hooks": "^4.2.11",
+    "@mantine/next": "^4.2.11",
     "@next-auth/prisma-adapter": "^1.0.3",
     "@prisma/client": "3.15.2",
     "@trpc/client": "^9.25.3",
@@ -28,6 +31,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-query": "^3.39.1",
+    "tabler-icons-react": "^1.51.0",
     "zod": "^3.17.3"
   },
   "devDependencies": {
